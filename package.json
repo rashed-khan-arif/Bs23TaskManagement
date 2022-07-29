@@ -1,0 +1,22 @@
+{
+  "name": "bs23taskmanagement",
+  "version": "1.0.0",
+  "description": "Practical Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashed-khan-arif/Bs23TaskManagement.git"
+  },
+  "keywords": [
+    "Task"
+  ],
+  "author": "Rashed Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashed-khan-arif/Bs23TaskManagement/issues"
+  },
+  "homepage": "https://github.com/rashed-khan-arif/Bs23TaskManagement#readme"
+}
