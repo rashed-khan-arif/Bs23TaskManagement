@@ -1,19 +1,18 @@
 import React from 'react';
-import {
-    Link,
-    Outlet,
-} from "react-router-dom";
+import Container from 'react-bootstrap/Container';
 import MainNav from '../components/MainNav';
+import { Outlet } from "react-router-dom";
+
 const Layout = () => {
     return (
-        <div>
-            <div className="content">
-                <MainNav />
-                <main>
+        <Container>
+            <MainNav />
+            <main>
+                <div className='content'>
                     <Outlet />
-                </main>
-            </div>
-        </div>
+                </div>
+            </main>
+        </Container>
     )
 
 }

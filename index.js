@@ -5,11 +5,14 @@ import { store } from './src/store/index'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from "react-router-dom";
 import "./src/assets/css/App.css";
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory({ window });
 
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter history={history}>
         <Provider store={store}>
             <App />
         </Provider>
