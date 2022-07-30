@@ -8,7 +8,11 @@ import {
     Link
 } from "react-router-dom";
 
+import { useSelector, useDispatch } from 'react-redux'
+
 const Members = () => {
+    const members = useSelector((state) => state.member.members)
+
     return (
         <Row>
             <Row>
@@ -31,12 +35,15 @@ const Members = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Rashed Khan</td>
-                                <td>5</td>
-                            </tr>
-
+                            {
+                                members && members.map(m => (
+                                    <tr>
+                                        <td>1</td>
+                                        <td>{m.name}</td>
+                                        <td>5</td>
+                                    </tr>
+                                ))
+                            }
                         </tbody>
                     </Table>
                 </Col>
