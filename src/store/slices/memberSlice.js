@@ -12,16 +12,6 @@ const initialState = {
         name: "Arif Khan",
         email: "rashed@gmail.com"
     },
-    ],
-    memberTasks: [
-        {
-            memberId: 1,
-            taskId: 1
-        },
-        {
-            memberId: 1,
-            taskId: 2
-        }
     ]
 }
 
