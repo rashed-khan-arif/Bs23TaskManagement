@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: ['babel-polyfill', path.join(__dirname, "src", "index.js")],
+    entry: ['babel-polyfill', path.join(__dirname, "index.js")],
     output: {
         path: path.resolve(__dirname, "dist")
     },
@@ -30,16 +30,17 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"]
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".css"]
     },
 
     devServer: {
-        hot: true
+        hot: true,
+        historyApiFallback: true,
     },
 
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, "src", "index.html"),
+            template: path.join(__dirname, "public", "index.html"),
         }),
     ],
 }

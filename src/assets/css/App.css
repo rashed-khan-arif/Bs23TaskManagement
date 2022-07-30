@@ -1,0 +1,12 @@
+body {
+    margin: auto;
+}
+
+.background {
+    color: antiquewhite;
+}
+
+.nav {
+    background-color: rgb(197, 193, 188);
+    padding: 20px;
+}
