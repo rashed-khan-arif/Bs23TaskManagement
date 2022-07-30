@@ -3,17 +3,12 @@ import {
     Link,
     Outlet,
 } from "react-router-dom";
+import MainNav from '../components/MainNav';
 const Layout = () => {
     return (
         <div>
             <div className="content">
-                <nav className="nav">
-                    <p style={{ float: 'left' }}>Dashboard</p>
-                    <div style={{ float: 'right' }}>
-                        <Link to="tasks">Tasks</Link> |{" "}
-                        <Link to="members">Members</Link>
-                    </div>
-                </nav>
+                <MainNav />
                 <main>
                     <Outlet />
                 </main>
